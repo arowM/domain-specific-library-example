@@ -255,6 +255,10 @@ pages =
                     """
                 , textBlock
                     """
+                    型クラス: インターフェースとか継承とかなんかそういうの
+                    """
+                , textBlock
+                    """
                     Opaque Typeによる カプセル化
                     """
                 ]
