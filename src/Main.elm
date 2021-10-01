@@ -587,11 +587,11 @@ pages =
                 , column
                     [ textBlock
                         """
-                        さくらちゃんがお手伝いしてる会社がエンジニアさがし中です。
+                        さくらちゃんが4年ほどお手伝いしてる会社がエンジニアさがし中です。
                         """
                     , textBlock
                         """
-                        さくらちゃんは、Domain Specific Libraryを使ってシステムを刷新する仕事とかしてます。
+                        さくらちゃんは、現在 Domain Specific Library を使ってシステムを刷新する仕事とかしてます。
                         """
                     , tweet "https://twitter.com/respon_go/status/1436247807808004096"
                     ]
