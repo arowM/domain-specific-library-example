@@ -1,0 +1,7 @@
+{
+  "root": "../src",
+  "tests": [
+    "Internal.Slide",
+    "Internal.Page"
+  ]
+}

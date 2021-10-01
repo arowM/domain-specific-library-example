@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "dependencies": {
+    "elm-doc-preview": "5.0.3",
+    "elm-format": "^0.8.3",
+    "elm-review": "^2.5.0",
+    "elm-test": "^0.19.1-revision6",
+    "elm-verify-examples": "^5.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "format": "elm-format src",
+    "start": "elm-doc-preview",
+    "review": "elm-review --fix",
+    "test": "rimraf tests/VerifyExamples && elm-review && elm-format --validate src && elm make --docs=/tmp/docs.json && elm-verify-examples --fail-on-warn -r"
+  },
+  "author": "Kadzuya Okamoto",
+  "license": "MIT",
+  "devDependencies": {
+    "elm": "^0.19.1-5"
+  }
+}

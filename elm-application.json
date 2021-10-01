@@ -1,0 +1,10 @@
+{
+    "name": "arowM/domain-specific-framework",
+    "summary": "An example project using domain specific framework.",
+    "version": "1.0.0",
+    "exposed-modules": [
+        "Dsf",
+        "Dsf.View",
+        "Dsf.Text"
+    ]
+}

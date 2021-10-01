@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "9.8.6",
+    "elm-doc-preview": "5.0.3",
+    "elm-format": "^0.8.3",
+    "elm-review": "^2.5.0",
+    "highlight.js": "^11.2.0",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.2",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-modules": "^3.2.0",
+    "prettier": "^2.0.5",
+    "rimraf": "3.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0"
+  },
+  "scripts": {
+    "doc": "elm-doc-preview -p 8001",
+    "start": "parcel serve src/index.html --https --public-url /domain-specific-library-example -p 8008",
+    "build": "rimraf docs/ && parcel build src/404.html --no-source-maps --dist-dir docs/ --public-url /domain-specific-library-example",
+    "build:dev": "rimraf dist/ && parcel build src/index.html --no-source-maps --dist-dir dist/domain-specific-library-example --public-url /domain-specific-library-example",
+    "format": "stylelint --fix src/style/ && elm-format src",
+    "review": "elm-review --fix --ignore-dirs=lib",
+    "test": "stylelint src/style/ && elm-review --ignore-dirs=lib && elm-format --validate src/"
+  },
+  "author": "Kadzuya Okamoto",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-elm": "^2.0.0-rc.0",
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "elm": "^0.19.1-5"
+  }
+}

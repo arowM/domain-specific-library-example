@@ -1,0 +1,31 @@
+$half-padding: 0.6rem;
+$default-radius: 0.4em;
+$sp-size: 600px;
+$tablet-size: 1000px;
+
+/* == Color == */
+$main-color0: #ec6ead;
+$main-color1: lighten($main-color0, 5%);
+$main-color2: lighten($main-color0, 10%);
+$main-color3: lighten($main-color0, 20%);
+$main-color4: lighten($main-color0, 40%);
+$base-color0: #3494e6;
+$base-color1: lighten($base-color0, 20%);
+$base-color2: lighten($base-color0, 40%);
+$base-color3: lighten($base-color0, 60%);
+$base-color4: lighten($base-color0, 75%);
+$accent-color0: #333;
+$accent-color1: lighten($accent-color0, 20%);
+$accent-color2: lighten($accent-color0, 40%);
+$accent-color3: lighten($accent-color0, 60%);
+$accent-color4: lighten($accent-color0, 80%);
+$error-color0: #f35f11;
+$error-color1: lighten($error-color0, 20%);
+$error-color2: lighten($error-color0, 40%);
+$error-color3: lighten($error-color0, 60%);
+$error-color4: lighten($error-color0, 80%);
+
+/* == Z-index == */
+$z-background: -1000;
+$z-popup: 1000;
+$z-popup-background: 900;
