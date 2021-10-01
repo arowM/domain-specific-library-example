@@ -1,5 +1,4 @@
 sudo: false # force container-based infrastructure
-before_script: cd lib
 language: node_js
 node_js:
   - "15.7"

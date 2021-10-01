@@ -25,7 +25,7 @@
     "build:dev": "rimraf dist/ && parcel build src/index.html --no-source-maps --dist-dir dist/domain-specific-library-example --public-url /domain-specific-library-example",
     "format": "stylelint --fix src/style/ && elm-format src",
     "review": "elm-review --fix --ignore-dirs=lib",
-    "test": "stylelint src/style/ && elm-review --ignore-dirs=lib && elm-format --validate src/"
+    "test": "stylelint src/style/ && elm-review --ignore-dirs=lib && elm-format --validate src/ && cd lib && npm i && npm test"
   },
   "author": "Kadzuya Okamoto",
   "license": "MIT",
