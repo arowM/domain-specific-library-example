@@ -21,7 +21,7 @@
   "scripts": {
     "doc": "elm-doc-preview -p 8001",
     "start": "parcel serve src/index.html --https --public-url /domain-specific-library-example -p 8008",
-    "build": "rimraf docs/ && parcel build src/404.html --no-source-maps --dist-dir docs/ --public-url /domain-specific-library-example",
+    "build": "rimraf docs/ && parcel build src/404.html src/link.html --no-source-maps --dist-dir docs/ --public-url /domain-specific-library-example",
     "build:dev": "rimraf dist/ && parcel build src/index.html --no-source-maps --dist-dir dist/domain-specific-library-example --public-url /domain-specific-library-example",
     "format": "stylelint --fix src/style/ && elm-format src",
     "review": "elm-review --fix --ignore-dirs=lib",
