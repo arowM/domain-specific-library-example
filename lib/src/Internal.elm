@@ -438,6 +438,7 @@ seqShowSlide showSlide msg =
                         { model
                             | page = SlideView showSlide.slide
                         }
+            , Update.push <| \(Model { extraJS }) -> extraJS ()
             ]
         , \v ->
             case v of

@@ -34,7 +34,7 @@ cover _ =
                     (Text.concat
                         [ Text.fromString
                             """
-                            Domain specific library/framework
+                            Domain specific library / framework
                             """
                             |> Text.setImportance 2
                         , Text.fromString
@@ -587,7 +587,7 @@ pages =
                 , column
                     [ textBlock
                         """
-                        さくらちゃんもお手伝いしてる会社がエンジニアさがし中です。
+                        さくらちゃんがお手伝いしてる会社がエンジニアさがし中です。
                         """
                     , textBlock
                         """

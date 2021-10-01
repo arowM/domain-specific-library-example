@@ -103,13 +103,16 @@
     font-size: 0.861rem;
   }
   &[data-importance="1"] {
-    font-size: 1.618rem;
+    font-size: 1.272rem;
   }
   &[data-importance="2"] {
-    font-size: 2.618rem;
+    font-size: 1.618rem;
   }
   &[data-importance="3"] {
-    font-size: 4.236rem;
+    font-size: 2.058rem;
+  }
+  &[data-importance="4"] {
+    font-size: 2.618rem;
   }
 }
 
@@ -141,7 +144,7 @@
 .textBlock {
   margin: 0.6em;
 
-  &:hover {
+  &:not(.pre):hover {
     transform: scale(1.1);
     transform-origin: top left;
   }
@@ -164,10 +167,6 @@
 .pre {
   .code {
     white-space: pre-wrap;
-
-    > span:hover {
-      transform: scale(1.2);
-    }
   }
 }
 
