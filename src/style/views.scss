@@ -46,10 +46,6 @@
       opacity: 0;
       cursor: pointer;
       animation: 550ms ease-in-out 3 flush;
-
-      &:hover {
-        opacity: 0.8;
-      }
     }
 
     &_proceedButton {
@@ -64,10 +60,6 @@
       opacity: 0;
       cursor: pointer;
       animation: 550ms ease-in-out 3 flush;
-
-      &:hover {
-        opacity: 0.8;
-      }
     }
   }
 }
@@ -157,11 +149,6 @@
     transform: scale(1.8);
     transform-origin: top left;
   }
-}
-
-.twitter-tweet:hover {
-  transform: scale(2.4);
-  transform-origin: top left;
 }
 
 .pre {

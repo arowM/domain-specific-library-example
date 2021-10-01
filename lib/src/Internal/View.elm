@@ -333,7 +333,7 @@ tweet : String -> View msg
 tweet url =
     Text.link
         { href = url
-        , target = ""
+        , target = "_blank"
         }
         "Loading..."
         |> customTextBlock
