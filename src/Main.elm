@@ -127,7 +127,7 @@ pages =
                         「関数型」との付き合い方で死ぬほど苦労しました。
                         """
                     , customTextBlock
-                        ( Text.concat
+                        (Text.concat
                             [ Text.fromString
                                 """
                                 先人達による基礎研究の結果をお借りして
@@ -136,7 +136,7 @@ pages =
                                 """
                                 実践的
                                 """
-                                    |> Text.setImportance 1
+                                |> Text.setImportance 1
                             , Text.fromString
                                 """
                                 な「関数型」の活用をしています。
@@ -163,7 +163,7 @@ pages =
                             """
                         ]
                 , textBlock
-                        """
+                    """
                         「プログラミングElm」もよろしくね！
                         """
                 ]
@@ -188,29 +188,29 @@ pages =
                             """
                             制約を多くすることで、以下のメリットが得られる
                             """
-                                |> Text.setImportance -1
-                                |> customTextBlock
+                            |> Text.setImportance -1
+                            |> customTextBlock
                         , unorderedList
                             [ Text.fromString
                                 """
                                 強力な静的解析が可能とする
                                 """
-                                    |> Text.setImportance -1
-                                    |> customTextBlock
+                                |> Text.setImportance -1
+                                |> customTextBlock
                             , Text.fromString
                                 """
                                 ドキュメントの正しさが担保される（型注釈・doctest）
                                 """
-                                    |> Text.setImportance -1
-                                    |> customTextBlock
+                                |> Text.setImportance -1
+                                |> customTextBlock
                             ]
                         ]
                     , Text.fromString
                         """
                         制約の例: イミュータブル、強い静的型
                         """
-                            |> Text.setImportance -1
-                            |> customTextBlock
+                        |> Text.setImportance -1
+                        |> customTextBlock
                     ]
                 , textBlock
                     """
@@ -270,8 +270,8 @@ pages =
                     """
                     この資料のソースはGitHub上で公開されています。
                     """
-                        |> customTextBlock
-                        |> alignRight
+                    |> customTextBlock
+                    |> alignRight
                 ]
             , image images.doc
             ]
@@ -286,9 +286,9 @@ pages =
                         """
                         エクセル万能！
                         """
-                            |> Text.setImportance 2
-                            |> customTextBlock
-                            |> alignHCenter
+                        |> Text.setImportance 2
+                        |> customTextBlock
+                        |> alignHCenter
                     , textBlock
                         """
                         人事・労務・顧客管理・売上管理・在庫管理、エクセルはあらゆることに使える。
@@ -298,16 +298,16 @@ pages =
                             """
                             ...じゃあ、専用のクラウドサービスは何のためにあるの？
                             """
-                                |> alignBottom
+                            |> alignBottom
                         ]
-                            |> setMaxHeightInfinite
-                    ]
                         |> setMaxHeightInfinite
+                    ]
+                    |> setMaxHeightInfinite
                 , image images.general
                     |> setMaxWidthInEm 20
                     |> alignRight
                 ]
-                    |> setMaxWidthFit
+                |> setMaxWidthFit
             ]
     , \_ ->
         titledPage
@@ -319,24 +319,24 @@ pages =
                     """
                     汎用性をあげるとユーザービリティが下がる
                     """
-                        |> Text.setImportance 2
-                        |> customTextBlock
-                        |> setMaxWidthFit
-                        |> alignCenter
+                    |> Text.setImportance 2
+                    |> customTextBlock
+                    |> setMaxWidthFit
+                    |> alignCenter
                 ]
-                    |> setMaxHeightInfinite
+                |> setMaxHeightInfinite
             , column
-                    [ textBlock
-                        """
+                [ textBlock
+                    """
                         ライブラリーやフレームワークも同様
                         """
-                    , textBlock
-                        """
+                , textBlock
+                    """
                         汎用性を高くしたいが、そうすると特定用途には使いにくくなる
                         """
-                    ]
-                        |> setMaxWidthFit
-                        |> alignHCenter
+                ]
+                |> setMaxWidthFit
+                |> alignHCenter
             ]
     , \_ ->
         titledPage
@@ -347,10 +347,10 @@ pages =
                 """
                 Domain（作っているアプリ）専用のフレームワーク/ライブラリーを作っちゃえばいいじゃん！
                 """
-                    |> Text.setImportance 1
-                    |> customTextBlock
-                    |> setMaxWidthFit
-                    |> alignCenter
+                |> Text.setImportance 1
+                |> customTextBlock
+                |> setMaxWidthFit
+                |> alignCenter
             , textBlock
                 """
                 用いるツール/技術の例:
@@ -387,7 +387,6 @@ pages =
                         """
                     ]
                 ]
-
             ]
     , \_ ->
         titledPage
@@ -398,7 +397,7 @@ pages =
                 """
                 従来のElmアプリコード
                 """
-                    |> toHeader3
+                |> toHeader3
             , textBlock
                 """
                 Elmはシンプルではあるが、さすがに初見ではむずかしい
@@ -414,13 +413,13 @@ pages =
                 """
                 Domain Specific Framework を使ったアプリコード
                 """
-                    |> toHeader3
+                |> toHeader3
             , Text.fromString
                 """
                 このスライドアプリのソースコード
                 """
-                    |> Text.setImportance -1
-                    |> customTextBlock
+                |> Text.setImportance -1
+                |> customTextBlock
             , textBlock
                 """
                 とりあえずメソッドチェーン的にパイプをつないでビューを組み立てたら完成する
@@ -568,19 +567,19 @@ pages =
                     週に15時間以上はたらくと蕁麻疹がでちゃうけど、自由に楽しくさせてくれるならスカウトしてくれてもいいよ
                     """
                 , [ Text.link
-                    { href = "https://twitter.com/arowM_"
-                    , target = "_blank"
-                    }
-                    """
+                        { href = "https://twitter.com/arowM_"
+                        , target = "_blank"
+                        }
+                        """
                     さくらちゃんのツイッター
                     """
                   , Text.fromString
-                    """
+                        """
                     をフォローして、ヤギさんのかわいさに目覚めてください。
                     """
                   ]
-                      |> Text.concat
-                      |> customTextBlock
+                    |> Text.concat
+                    |> customTextBlock
                 , textBlock
                     """
                     「関数型」でマウントとってくるやつは実際にはまともなアプリ開発できないから騙されないでね
@@ -617,10 +616,13 @@ type alias Flags =
 port extraJS : () -> Cmd msg
 
 
+
 -- Code samples
 
+
 originalCode : String
-originalCode = """
+originalCode =
+    """
 main : Program () Model Msg
 main =
   Browser.application
@@ -710,7 +712,8 @@ viewLink path =
 
 
 dsfCode : String
-dsfCode = """
+dsfCode =
+    """
 main : Program Flags Model Msg
 main =
     Dsf.run extraJS cover pages
@@ -721,14 +724,14 @@ cover _ =
     coverPage
         [ column
             [ textBlock
-                \"""
+                \"\"\"
                 2021年10月1日
-                \"""
+                \"\"\"
             , customTextBlock
                 (Text.fromString
-                    \"""
+                    \"\"\"
                     第一回関数型プログラミング（仮）の会
-                    \"""
+                    \"\"\"
                     |> Text.setImportance -1
                 )
             ]
@@ -739,14 +742,14 @@ cover _ =
                 [ customTextBlock
                     (Text.concat
                         [ Text.fromString
-                            \"""
+                            \"\"\"
                             Domain specific library/framework
-                            \"""
+                            \"\"\"
                             |> Text.setImportance 2
                         , Text.fromString
-                            \"""
+                            \"\"\"
                             を用いた
-                            \"""
+                            \"\"\"
                             |> Text.setImportance 1
                         ]
                     )
@@ -754,14 +757,14 @@ cover _ =
                 , customTextBlock
                     (Text.concat
                         [ Text.fromString
-                            \"""
+                            \"\"\"
                             実践的
-                            \"""
+                            \"\"\"
                             |> Text.setImportance 2
                         , Text.fromString
-                            \"""
+                            \"\"\"
                             開発手法
-                            \"""
+                            \"\"\"
                             |> Text.setImportance 1
                         ]
                     )
@@ -776,9 +779,9 @@ cover _ =
                 { href = "https://twitter.com/arowM_"
                 , target = "_blank"
                 }
-                \"""
+                \"\"\"
                 ヤギのさくらちゃん
-                \"""
+                \"\"\"
             )
             |> alignRight
         ]
