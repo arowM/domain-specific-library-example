@@ -22,7 +22,19 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 26px;
+  font-size: calc(100vw / 80 + 8px);
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 body {

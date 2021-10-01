@@ -88,14 +88,19 @@
 }
 
 .text {
-  &[data-importance="-3"] {
+  vertical-align: baseline;
+
+  &[data-importance="-4"] {
     font-size: 0.236rem;
   }
-  &[data-importance="-2"] {
+  &[data-importance="-3"] {
     font-size: 0.3819rem;
   }
-  &[data-importance="-1"] {
+  &[data-importance="-2"] {
     font-size: 0.618rem;
+  }
+  &[data-importance="-1"] {
+    font-size: 0.861rem;
   }
   &[data-importance="1"] {
     font-size: 1.618rem;
@@ -122,7 +127,6 @@
 
 .column {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: stretch;
 }
@@ -138,15 +142,17 @@
   margin: 0.6em;
 
   &:hover {
-    transform: scale(1.8);
+    transform: scale(1.1);
+    transform-origin: top left;
   }
 }
 
 .image {
   object-fit: contain;
 
-  &:hover {
+  &.maxWidth-em:hover {
     transform: scale(1.8);
+    transform-origin: top left;
   }
 }
 
@@ -158,6 +164,10 @@
 .pre {
   .code {
     white-space: pre-wrap;
+
+    > span:hover {
+      transform: scale(1.2);
+    }
   }
 }
 

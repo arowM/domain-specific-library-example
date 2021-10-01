@@ -433,7 +433,13 @@ pushAttributes ls (View view) =
 -}
 unorderedList : List (View msg) -> View msg
 unorderedList children =
-    column children
+    children
+        |> List.map
+            (\c ->
+                row [ textBlock "・", c ]
+                    |> setMinWidthNowrap
+            )
+        |> column
         |> modifyChildren (setTagName "li")
         |> pushAttributes [ class "column-unorderedList" ]
         |> setTagName "ul"

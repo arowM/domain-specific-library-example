@@ -1,11 +1,12 @@
 const { Elm } = require('../Main.elm');
-import sample from "../img/sample.png"
 
 const app = Elm.Main.init({
   node: document.body.appendChild(document.createElement('div')),
   flags: {
     images: {
-      "sample": sample
+      sample: require('../img/sample.png'),
+      doc: require('../img/doc.png'),
+      general: require('../img/general.jpg')
     }
   }
 });
