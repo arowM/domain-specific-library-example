@@ -395,14 +395,13 @@ seqLoading loading msg =
             ]
         , \v ->
             case v of
-                UrlChanged url ->
-                    avoidElmReviewWarning url <|
-                        Sequence.succeed <|
-                            jump
-                                (ShowSlide_
-                                    { slide = loading.initSlide
-                                    }
-                                )
+                UrlChanged _ ->
+                    Sequence.succeed <|
+                        jump
+                            (ShowSlide_
+                                { slide = loading.initSlide
+                                }
+                            )
 
                 LoadRoute slide ->
                     Sequence.succeed <|
@@ -415,11 +414,6 @@ seqLoading loading msg =
                 _ ->
                     Sequence.waitAgain Update.none
         ]
-
-
-avoidElmReviewWarning : Url -> a -> a
-avoidElmReviewWarning _ =
-    identity
 
 
 
@@ -442,6 +436,14 @@ seqShowSlide showSlide msg =
             ]
         , \v ->
             case v of
+                UrlChanged url ->
+                    Sequence.waitAgain <|
+                        jump <|
+                            Loading_
+                                { url = url
+                                , initSlide = showSlide.slide
+                                }
+
                 ClickProceed ->
                     let
                         newSlide =
