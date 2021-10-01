@@ -456,6 +456,7 @@ seqShowSlide showSlide msg =
                                             , newSlide
                                                 |> Slide.current
                                                 |> Page.title
+                                                |> Url.percentEncode
                                             ]
                                             []
                             , Update.push <| \(Model { extraJS }) -> extraJS ()
@@ -481,6 +482,7 @@ seqShowSlide showSlide msg =
                                             , newSlide
                                                 |> Slide.current
                                                 |> Page.title
+                                                |> Url.percentEncode
                                             ]
                                             []
                             , Update.push <| \(Model { extraJS }) -> extraJS ()
@@ -506,6 +508,7 @@ seqShowSlide showSlide msg =
                                             , newSlide
                                                 |> Slide.current
                                                 |> Page.title
+                                                |> Url.percentEncode
                                             ]
                                             []
                             , Update.push <| \(Model { extraJS }) -> extraJS ()
@@ -531,6 +534,7 @@ seqShowSlide showSlide msg =
                                             , newSlide
                                                 |> Slide.current
                                                 |> Page.title
+                                                |> Url.percentEncode
                                             ]
                                             []
                             , Update.push <| \(Model { extraJS }) -> extraJS ()
